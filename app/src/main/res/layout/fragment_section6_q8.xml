@@ -1,0 +1,243 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Section6Q8">
+
+    <TextView
+        android:id="@+id/textView34"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="30dp"
+        android:fontFamily="@font/baloo2"
+        android:text="Question 8/14"
+        android:textColor="@color/black"
+        android:textSize="11sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imgback" />
+
+    <TextView
+        android:id="@+id/textView67"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="13dp"
+        android:fontFamily="@font/nats_regular"
+        android:text="SECTION 6"
+        android:textColor="@color/black"
+        android:textSize="26sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.462"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <ImageButton
+        android:id="@+id/imgback"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_marginStart="23dp"
+        android:backgroundTint="@color/white"
+        app:layout_constraintBottom_toBottomOf="@+id/textView67"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/textView67"
+        app:srcCompat="@drawable/ic_baseline_arrow_back_black"
+        app:tint="@color/black" />
+
+
+    <ImageView
+        android:id="@+id/imageView27"
+        android:layout_width="0dp"
+        android:layout_height="587dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="35dp"
+        android:layout_marginEnd="30dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/choose_background"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView34" />
+
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/textView77"
+        android:layout_centerHorizontal="true"
+        android:layout_marginHorizontal="15dp"
+        android:layout_marginTop="15dp"
+        app:layout_constraintEnd_toEndOf="@+id/imageView27"
+        app:layout_constraintStart_toStartOf="@+id/imageView27"
+        app:layout_constraintTop_toBottomOf="@+id/textView77">
+
+
+        <RadioButton
+            android:id="@+id/daily"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="Daily"
+            android:button="@null"
+            android:textColor="@color/black"
+            android:background="@drawable/radiobtn_off"
+            android:textAlignment="center"
+            android:fontFamily="@font/nats_regular"
+            android:textSize="18sp"
+            android:layout_marginBottom="10dp"/>
+
+        <RadioButton
+            android:id="@+id/never"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="Never"
+            android:button="@null"
+            android:textColor="@color/black"
+            android:background="@drawable/radiobtn_off"
+            android:textAlignment="center"
+            android:fontFamily="@font/nats_regular"
+            android:textSize="18sp"
+
+            android:layout_marginBottom="10dp"/>
+
+        <RadioButton
+            android:id="@+id/oneWeek"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="Once in a week"
+            android:textColor="@color/black"
+            android:button="@null"
+            android:background="@drawable/radiobtn_off"
+            android:textAlignment="center"
+            android:fontFamily="@font/nats_regular"
+            android:textSize="18sp"
+
+            android:layout_marginBottom="10dp"/>
+
+        <RadioButton
+            android:id="@+id/twWeek"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="Twice in a week"
+            android:textColor="@color/black"
+            android:button="@null"
+            android:background="@drawable/radiobtn_off"
+            android:textAlignment="center"
+            android:fontFamily="@font/nats_regular"
+            android:textSize="18sp"
+
+            android:layout_marginBottom="10dp"/>
+
+        <RadioButton
+            android:id="@+id/thrWeek"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="3-4 times in a week"
+            android:textColor="@color/black"
+            android:button="@null"
+            android:background="@drawable/radiobtn_off"
+            android:textAlignment="center"
+            android:fontFamily="@font/nats_regular"
+            android:textSize="18sp"
+
+            android:layout_marginBottom="10dp"/>
+
+        <RadioButton
+            android:id="@+id/fifteen"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="Once in 15 days"
+            android:textColor="@color/black"
+            android:button="@null"
+            android:background="@drawable/radiobtn_off"
+            android:textAlignment="center"
+            android:fontFamily="@font/nats_regular"
+            android:textSize="18sp"
+            android:layout_marginBottom="10dp"/>
+
+        <RadioButton
+            android:id="@+id/monthly"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="Monthly"
+            android:textColor="@color/black"
+            android:button="@null"
+            android:background="@drawable/radiobtn_off"
+            android:textAlignment="center"
+            android:fontFamily="@font/nats_regular"
+            android:textSize="18sp"/>
+
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/textView77"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:fontFamily="@font/baloo2"
+        android:text="Food frequency questionnaire: Fruits"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="11sp"
+        android:layout_marginTop="25dp"
+        app:layout_constraintEnd_toEndOf="@+id/imageView27"
+        app:layout_constraintStart_toStartOf="@+id/imageView27"
+        app:layout_constraintTop_toTopOf="@+id/imageView27" />
+
+    <ImageView
+        android:id="@+id/imageView38"
+        android:src="@mipmap/blback"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        app:layout_constraintBottom_toBottomOf="@+id/backbtn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.198"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/backbtn"/>
+
+    <TextView
+        android:id="@+id/backbtn"
+        android:textColor="#704CFF"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="25dp"
+        android:clickable="true"
+        android:fontFamily="@font/nats_regular"
+        android:text="Back"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/nextbtn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.276"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/radioGroup" />
+
+    <Button
+        android:id="@+id/nextbtn"
+        android:text="Next"
+        android:layout_width="117dp"
+        android:layout_height="50dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:fontFamily="@font/nats_regular"
+        android:paddingTop="0dp"
+        android:paddingBottom="5dp"
+        android:textAlignment="center"
+        android:textAllCaps="false"
+        android:backgroundTint="#704CFF"
+        android:textSize="18sp"
+        app:cornerRadius="10dp"
+        android:layout_marginTop="25dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.744"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/radioGroup" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

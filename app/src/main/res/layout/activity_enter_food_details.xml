@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".EnterFoodDetails"
+    android:orientation="vertical"
+    android:background="@drawable/brand_color_for_device">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        app:cardCornerRadius="20dp"
+        android:layout_gravity="center"
+        app:cardElevation="30dp">
+
+        <ImageView
+            android:id="@+id/food_eaten"
+            android:layout_width="325dp"
+            android:layout_height="530dp"
+            android:layout_gravity="center"
+            android:scaleType="fitXY" />
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|center">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:background="@drawable/color_for_meal_tracker_details"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginHorizontal="10dp">
+
+                <EditText
+                    android:id="@+id/name"
+                    android:layout_width="0dp"
+                    android:layout_height="60dp"
+                    android:textColor="@color/black"
+                    android:hint="Enter the name"
+                    android:textColorHint="@color/black"
+                    android:textSize="20sp"
+                    android:fontFamily="@font/nats_regular"
+                    android:layout_gravity="center"
+                    android:layout_weight="2"
+                    android:layout_marginEnd="10dp"/>
+
+                <TextView
+                    android:id="@+id/meal"
+                    android:text="Bread Truffle"
+                    android:gravity="end"
+                    android:layout_marginEnd="15dp"
+                    style="@style/enter_food_time" />
+            </LinearLayout>
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginHorizontal="10dp">
+    <ImageView
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_gravity="center"
+        android:src="@drawable/dateandtime"/>
+    <TextView
+        android:id="@+id/date_and_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="date_and_time"
+        style="@style/enter_food_time"
+        android:layout_marginStart="10dp"/>
+</LinearLayout>
+            <EditText
+                android:id="@+id/enter_description"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Enter description (Optional)"
+                style="@style/enter_food_time"
+                android:lineHeight="20dp"
+                android:layout_marginHorizontal="10dp"
+                android:textColorHint="#4A4A4A"
+                android:layout_marginBottom="20dp"/>
+        </LinearLayout>
+        </ScrollView>
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/save_meal"
+        android:layout_width="300dp"
+        android:layout_height="60dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/outline"
+        android:backgroundTint="@color/white"
+        android:text="Save"
+        android:textColor="@color/black" />
+
+</LinearLayout>

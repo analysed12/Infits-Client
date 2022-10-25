@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item android:id="@+id/dboard"
+            android:icon="@drawable/dashboardimg"
+            android:title="Dashboard" />
+
+        <item android:id="@+id/charts"
+            android:icon="@drawable/chartimg"
+            android:title="Charts" />
+
+        <item android:id="@+id/live"
+            android:icon="@drawable/live_menu"
+            android:title="Live"/>
+
+        <item android:id="@+id/consul"
+            android:icon="@drawable/message"
+            android:title="Consultation" />
+
+        <item android:id="@+id/scan"
+            android:title="Scan"
+            android:icon="@drawable/scan"/>
+
+        <item android:id="@+id/recipes"
+            android:title="Recipies"
+            android:icon="@drawable/recipes_icon"/>
+
+        <item android:id="@+id/message"
+            android:icon="@drawable/mail_icon"
+            android:title="Mail" />
+
+        <item android:id="@+id/setting"
+            android:icon="@drawable/settingimg"
+            android:title="Settings" />
+    </group>
+
+
+</menu>

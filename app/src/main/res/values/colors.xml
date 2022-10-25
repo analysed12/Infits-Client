@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFF</color>
+    <color name="orange">#FF806C</color>
+    <color name="purple">#BD4AAE</color>
+    <color name="blue">#278EFF</color>
+    <color name="darkpurple">#7B29FF</color>
+    <color name="green">#529497</color>
+    <color name="pink">#E8868F</color>
+    <color name="btnblue">#1D8BF1</color>
+    <color name="sleeppurple">#9C74F5</color>
+    <color name="waterblue">#76A5FF</color>
+    <color name="weightgreen">#00C170</color>
+    <color name="foodyellow">#F6B566</color>
+    <color name="btnset">#FAFAFA</color>
+    <color name="transparent">#0000C853</color>
+    <color name="heartpink">#E375B3</color>
+    <color name="steps">#FFA381</color>
+
+    <array name="range">
+        <item>#5884FE</item>
+        <item>#DA75EC</item>
+    </array>
+
+    <color name="calendar_selected_day_b">#FFA381</color>
+    <color name="calendar_selected_range_bg">@color/blue</color>
+
+    <color name="colorGray">#808080</color>
+
+    <color name="weightcolor">#1FB889</color>
+
+    <color name="weight">#1FB58A</color>
+
+    <color name="live_text_box">#66FFFFFF</color>
+
+    <color name="range_color">#ffaaaa</color>
+    <color name="whitesixty">#99FFFFFF</color>
+    <color name="bluetoothThumb">#2C3F96</color>
+    <array name="progress">
+        <item>@color/white</item>
+    </array>
+    <array name="track">
+        <item>@color/whitesixty</item>
+    </array>
+    <array name="consultation_track_color">
+        <item>#EDEDED</item>
+    </array>
+    <array name="section_two">
+        <item>#FF7777</item>
+    </array>
+    <array name="section_one">
+        <item>#9873FF</item>
+    </array>
+    <array name="section_three">
+        <item>#FFCD6B</item>
+    </array>
+    <array name="section_four">
+        <item>#DE3BEC</item>
+    </array>
+    <array name="section_five">
+        <item>#704CFF</item>
+    </array>
+    <array name="section_six">
+        <item>#1FB688</item>
+    </array>
+</resources>

@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/trackers_graph"
+    app:startDestination="@id/dashBoardFragment">
+
+    <fragment
+        android:id="@+id/stepTrackerFragment"
+        android:name="com.example.infits.StepTrackerFragment"
+        android:label="fragment_step_tracker"
+        tools:layout="@layout/fragment_step_tracker" >
+        <action
+            android:id="@+id/action_stepTrackerFragment_to_dashBoardFragment"
+            app:destination="@id/dashBoardFragment"
+            app:popUpTo="@id/trackers_graph"/>
+    </fragment>
+    <fragment
+        android:id="@+id/weightTrackerFragment"
+        android:name="com.example.infits.WeightTrackerFragment"
+        android:label="fragment_weight_tracker"
+        tools:layout="@layout/fragment_weight_tracker" >
+        <action
+            android:id="@+id/action_weightTrackerFragment_to_bmiFragment"
+            app:destination="@id/bmiFragment"
+            app:popUpTo="@id/trackers_graph" />
+        <action
+            android:id="@+id/action_weightTrackerFragment_to_dashBoardFragment"
+            app:destination="@id/dashBoardFragment"
+            app:popUpTo="@id/trackers_graph" />
+        <action
+            android:id="@+id/action_weightTrackerFragment_to_weightDateFragment"
+            app:destination="@id/weightDateFragment"
+            app:popUpTo="@id/weightTrackerFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/calorieTrackerFragment"
+        android:name="com.example.infits.CalorieTrackerFragment"
+        android:label="fragment_calorie_tracker"
+        tools:layout="@layout/fragment_calorie_tracker" >
+        <action
+            android:id="@+id/action_calorieTrackerFragment_to_foodDetailsFragment"
+            app:destination="@id/foodDetailsFragment" />
+        <action
+            android:id="@+id/action_calorieTrackerFragment_to_dashBoardFragment"
+            app:destination="@id/dashBoardFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/foodDetailsFragment"
+        android:name="com.example.infits.FoodDetailsFragment"
+        android:label="fragment_food_details"
+        tools:layout="@layout/fragment_food_details" >
+        <action
+            android:id="@+id/action_foodDetailsFragment_to_calorieTrackerFragment"
+            app:destination="@id/calorieTrackerFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/waterTrackerFragment"
+        android:name="com.example.infits.WaterTrackerFragment"
+        android:label="fragment_water_tracker"
+        tools:layout="@layout/fragment_water_tracker">
+        <action
+            android:id="@+id/action_waterTrackerFragment_to_dashBoardFragment"
+            app:destination="@id/dashBoardFragment"
+            app:popUpTo="@id/trackers_graph" />
+        <action
+            android:id="@+id/action_waterTrackerFragment_to_addLiquidFragment"
+            app:destination="@id/addLiquidFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/sleepTrackerFragment"
+        android:name="com.example.infits.SleepTrackerFragment"
+        android:label="fragment_sleep_tracker"
+        tools:layout="@layout/fragment_sleep_tracker" >
+        <action
+            android:id="@+id/action_sleepTrackerFragment_to_dashBoardFragment"
+            app:destination="@id/dashBoardFragment"
+            app:popUpTo="@id/trackers_graph" />
+    </fragment>
+    <fragment
+        android:id="@+id/bmiFragment"
+        android:name="com.example.infits.BmiFragment"
+        android:label="fragment_bmi"
+        tools:layout="@layout/fragment_bmi" >
+        <action
+            android:id="@+id/action_bmiFragment_to_weightTrackerFragment"
+            app:destination="@id/weightTrackerFragment"
+            app:popUpTo="@id/weightTrackerFragment"/>
+    </fragment>
+    <fragment
+        android:id="@+id/dashBoardFragment"
+        android:name="com.example.infits.DashBoardFragment"
+        android:label="fragment_dash_board"
+        tools:layout="@layout/fragment_dash_board" >
+        <action
+            android:id="@+id/action_dashBoardFragment_to_stepTrackerFragment"
+            app:destination="@id/stepTrackerFragment" />
+        <action
+            android:id="@+id/action_dashBoardFragment_to_calorieTrackerFragment"
+            app:destination="@id/calorieTrackerFragment" />
+        <action
+            android:id="@+id/action_dashBoardFragment_to_sleepTrackerFragment"
+            app:destination="@id/sleepTrackerFragment" />
+        <action
+            android:id="@+id/action_dashBoardFragment_to_weightTrackerFragment"
+            app:destination="@id/weightTrackerFragment" />
+        <action
+            android:id="@+id/action_dashBoardFragment_to_waterTrackerFragment"
+            app:destination="@id/waterTrackerFragment" />
+        <action
+            android:id="@+id/action_dashBoardFragment_to_heartRate"
+            app:destination="@id/heartRate" />
+    </fragment>
+    <fragment
+        android:id="@+id/addLiquidFragment"
+        android:name="com.example.infits.AddLiquidFragment"
+        android:label="fragment_add_liquid"
+        tools:layout="@layout/fragment_add_liquid" >
+        <action
+            android:id="@+id/action_addLiquidFragment_to_waterTrackerFragment"
+            app:destination="@id/waterTrackerFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/weightDateFragment"
+        android:name="com.example.infits.WeightDateFragment"
+        android:label="fragment_weight_date"
+        tools:layout="@layout/fragment_weight_date" >
+        <action
+            android:id="@+id/action_weightDateFragment_to_weightTrackerFragment"
+            app:destination="@id/weightTrackerFragment"
+            app:popUpTo="@id/weightTrackerFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/heartRate"
+        android:name="com.example.infits.HeartRate"
+        android:label="fragment_heart_rate"
+        tools:layout="@layout/fragment_heart_rate" >
+        <action
+            android:id="@+id/action_heartRate_to_dashBoardFragment"
+            app:destination="@id/dashBoardFragment"
+            app:popUpTo="@id/trackers_graph" />
+    </fragment>
+</navigation>

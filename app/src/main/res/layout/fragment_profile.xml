@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".Profile"
+    android:id="@+id/profileFrag">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/textView67"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_marginTop="13dp"
+                android:fontFamily="@font/nats_regular"
+                android:text="PROFILE"
+                android:textColor="@color/black"
+                android:textSize="26sp" />
+
+            <ImageButton
+                android:id="@+id/imgback"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="23dp"
+                android:backgroundTint="@color/white"
+                app:srcCompat="@drawable/ic_baseline_arrow_back_ios_24"
+                app:tint="@color/black" />
+        </RelativeLayout>
+
+        <androidx.cardview.widget.CardView
+    android:layout_width="130dp"
+    android:layout_height="130dp"
+    android:layout_gravity="center_horizontal"
+    app:cardCornerRadius="100dp">
+    <ImageView
+        android:id="@+id/dietician_profile_image"
+        android:layout_width="130dp"
+        android:layout_height="130dp"
+        android:src="@drawable/profilepic" />
+</androidx.cardview.widget.CardView>
+
+        <TextView
+            android:id="@+id/dietician_profile_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:fontFamily="@font/nats_regular"
+            android:text="Dr.Strange"
+            android:textColor="#676767"
+            android:textSize="32sp" />
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="25dp"
+            android:gravity="center"
+            android:id="@+id/qualificationProfile"
+            android:text="Dietitian"
+            android:textSize="16dp"
+            android:textColor="@color/white"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/status_active"
+            android:backgroundTint="#4B9AFB"/>
+
+        <TextView
+            android:id="@+id/dieitician_rating"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center"
+            android:drawableStart="@drawable/star"
+            android:text="4.8 (25 Reviews)"
+            android:layout_marginTop="3dp"/>
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:contentPadding="10dp">
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:src="@drawable/background_dashboard"/>
+            <ImageView
+                android:layout_width="14dp"
+                android:layout_height="18dp"
+                android:src="@drawable/location"
+                android:layout_marginEnd="30dp"
+                android:layout_marginTop="10dp"
+                android:layout_gravity="center_horizontal"/>
+
+            <TextView
+                android:id="@+id/dieitician_location"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:text="Mumbai" />
+
+            <TextView
+                android:id="@+id/dieitician_experience"
+                android:layout_width="200dp"
+                android:layout_height="40dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="40dp"
+                android:background="@drawable/status_active"
+                android:backgroundTint="#4B9AFB"
+                android:drawableStart="@drawable/calender"
+                android:gravity="center"
+                android:padding="10dp"
+                android:text="10 years experience"
+                android:textColor="@color/white" />
+        </androidx.cardview.widget.CardView>
+
+        <TextView
+            android:id="@+id/dieitician_about_me"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="24dp"
+            android:fontFamily="@font/nats_regular"
+            android:lineHeight="16dp"
+            android:text="@string/Loremipsum" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/dietician_number_of_reviews"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="24dp"
+                android:fontFamily="@font/nats_regular"
+                android:lineHeight="18dp"
+                android:layout_weight="1"
+                android:text="25 Reviews:" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="See All"
+                android:fontFamily="@font/nats_regular"
+                android:lineHeight="18dp"
+                android:layout_marginEnd="24dp"/>
+        </LinearLayout>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/dietician_reviews"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scrollbars="horizontal" />
+    </LinearLayout>
+</FrameLayout>

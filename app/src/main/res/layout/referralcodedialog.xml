@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="325dp"
+    android:layout_height="211dp"
+    android:background="@color/white"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:layout_margin="5dp">
+
+    <TextView
+        android:id="@+id/textView66"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Enter the Referral Code"
+        android:textColor="@color/black"
+        android:fontFamily="@font/nats_regular"
+        android:textSize="26sp"
+        android:layout_marginTop="6dp"/>
+
+    <EditText
+        android:id="@+id/referralcode"
+        android:layout_width="252dp"
+        android:layout_height="wrap_content"
+        android:textSize="26sp"
+        android:fontFamily="@font/nats_regular"
+        android:paddingHorizontal="10dp"
+        android:inputType="textPersonName"
+        android:textColor="@color/black"
+        android:background="@drawable/outline"/>
+    <ImageView
+        android:id="@+id/checkReferral"
+        android:layout_width="92dp"
+        android:layout_height="54dp"
+        android:layout_marginTop="20dp"
+        android:src="@drawable/tick_for_referal" />
+</LinearLayout>

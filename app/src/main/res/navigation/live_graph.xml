@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/live_graph.xml"
+    app:startDestination="@id/live">
+
+    <fragment
+        android:id="@+id/liveList"
+        android:name="com.example.infits.LiveList"
+        android:label="fragment_live_list"
+        tools:layout="@layout/fragment_live_list" >
+        <action
+            android:id="@+id/action_liveList_to_live2"
+            app:destination="@id/live" />
+    </fragment>
+    <fragment
+        android:id="@+id/live"
+        android:name="com.example.infits.Live"
+        android:label="fragment_live"
+        tools:layout="@layout/fragment_live" />
+</navigation>

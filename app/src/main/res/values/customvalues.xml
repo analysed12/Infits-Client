@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="Circular">
+        <item name="cornerSize">50%</item>
+    </style>
+
+    <style name="CircularNotif">
+        <item name="cornerSize">50%</item>
+    </style>
+
+    <style name="ImageCorner">
+        <item name="cornerSize">20%</item>
+    </style>
+
+    <dimen name="switch_padding">-1dp</dimen>
+    <dimen name="switch_radius">24dp</dimen>
+    <dimen name="switch_size">24dp</dimen>
+
+</resources>

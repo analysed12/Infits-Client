@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LiveList"
+    android:orientation="vertical">
+
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Now Streaming Live"
+        android:background="#13131A"
+        android:textColor="@color/white"
+        android:textSize="28dp"
+        android:fontFamily="@font/nats_regular"/>
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/streaming_live"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#13131A"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Upcoming Live"
+        android:textSize="28dp"
+        android:textColor="@color/black"
+        android:fontFamily="@font/nats_regular"/>
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/upcoming_live"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        />
+</LinearLayout>
